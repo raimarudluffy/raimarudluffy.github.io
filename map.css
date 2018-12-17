@@ -1,0 +1,68 @@
+#logo{
+  position: top;
+}
+
+table {
+  text-align: center;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: lightseagreen;
+    border: 3px solid #135447;;
+
+    width: 250px;
+
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #dbdcdd;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  margin:auto
+}
+
+/* Change the color of links on hover */
+.topnav td:hover {
+  background-color: #282828;
+}
+.topnav a.active {
+    background-color: #135447;
+    color: white;
+}
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+}
+
+header {
+  border-bottom: 1px solid white;
+
+  background-color: #4ac7ae;
+  background-position:top;
+
+  box-shadow: 0px 0px 400px #4ac7ae;
+}
+
+body {
+  text-align: center;
+  background-color: rgba(83, 87, 94, 0.2);
+}
+
+
+.content {
+  font-family: sans-serif;
+  font-size: 21px;
+}

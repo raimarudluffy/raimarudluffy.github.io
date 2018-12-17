@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IIUM Sports Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="achievement.css">
+    <style>
+
+/* slideshow*/
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* next/pre button */
+.prev, .next {
+  cursor: pointer;
+  position: center;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* next button position */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* bg color hovering*/
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/*slideshow*/
+</style>
+
+  </head>
+  <body>
+    <header>
+      <div id=header>
+        <div id="logo">
+          <img src="new1.png" style="width:300px;height:170px ;border:4px solid #dbc80a; margin:10px;box-shadow: 0px 0px 100px black;" >
+          <img src="iium logo.png" style="width:300px;height:170px ;border:4px solid #dbc80a; margin:20px;box-shadow: 0px 0px 100px black;" >
+        </div>
+        
+        <table border="1" align="center" class="topnav">
+          <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="about.html">About</a></td>
+            <td><a class="active" href="#Map">Achievement</a></td>
+            <td><a href="register.html">Register</a></td>
+            <td><a href="calendar.html">Calendar</a></td>
+            <td><a href="map.html">Map</a></td>
+            <td><a href="contact.html">Contact</a></td>
+          </tr>
+      </table>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="hof">
+          <h1 class="hof">Hall Of Fame</h1>
+      </div>
+      <br><br>
+      <div class="year">
+        <strong>2015<strong>
+      </div>
+
+      <p style = "text-align:center"></p>
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="CONGRATS SUKIPT.jpg" style="width:90%;height:600px;margin-top: 10px;">
+          <div class="Caption">Congratulation IIUM Mustang on SUKIPT 2018</div>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="kusef.jpg" style="width:90%;height:600px;margin-top: 10px;">
+            <div class="Caption">Econs Mania the WIN all</div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <br><br>
+      <strong>2016<strong>
+      <div class="slideshow-container">
+        <div class="mySlides2">
+          <img src="kusef.jpg" style="width:90%;height:600px;margin-top: 10px">
+          <div class="Caption">Econs Mania the WIN all</div>
+        </div>
+
+        <div class="mySlides2">
+          <img src="CONGRATS SUKIPT.jpg" style="width:90%;height:600px;margin-top: 10px">
+          <div class="Caption">Congratulation IIUM Mustang on SUKIPT 2018</div>
+        </div>
+
+
+
+
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+    </div>
+
+    <script>
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2",]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex[no]-1].style.display = "block";
+    }
+    </script>
+
+  </body>
+</html>
